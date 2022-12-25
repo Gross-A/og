@@ -421,17 +421,17 @@ function _createModal(products,nameCategory, numberOfProduct) { //*temp было
                     </div>
                     <div class="modal__info">
                         <h4>Размерный ряд:</h4>
-                        <p>&nbsp &nbsp &nbsp от 50 до 58</p>
+                        <p>от 50 до 58</p>
                         <span class="modal__paragraph"></span> 
                     </div>
                     <div class="modal__info">
                         <h4>Состав:</h4>
-                        <p>&nbsp &nbsp &nbsp 90% пух норки, 10% полиамид</p>
+                        <p>90% пух норки, 10% полиамид</p>
                         <span class="modal__paragraph"></span> 
                     </div>
                     <div class="modal__info">
                         <h4>Сезон:</h4>
-                        <p>&nbsp &nbsp &nbsp демисезон/ зима</p>
+                        <p>демисезон/ зима</p>
                         <span class="modal__paragraph"></span> 
                     </div>
 

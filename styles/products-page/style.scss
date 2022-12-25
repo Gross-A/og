@@ -764,6 +764,12 @@ a:visited {
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
+
+        p {
+            @media (max-screen: 360px) {
+                text-align: center;
+            }
+        }
         /* or 136% */
 
 
@@ -1176,7 +1182,7 @@ a:visited {
         
         }
         p {
-            margin: 0;
+            margin: 0 0 0 10px;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 500;
@@ -1199,6 +1205,21 @@ a:visited {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 25px;
+
+        @media (max-width: 360px) { //*temp 25.12
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 0px;
+            .modal__info {
+                margin: 10px 0;
+            }
+            a {
+                margin: 10px 0;
+            }
+            
+        }
+
 
         .modal__button_order {
             width: 100px;

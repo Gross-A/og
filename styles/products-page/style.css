@@ -678,6 +678,12 @@ a:visited {
   color: #000000;
 }
 
+@media (max-screen: 360px) {
+  .footer .footer__text p {
+    text-align: center;
+  }
+}
+
 .footer .logo_link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1089,7 +1095,7 @@ a:visited {
 }
 
 .modal__card .modal__info p {
-  margin: 0;
+  margin: 0 0 0 10px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -1122,6 +1128,28 @@ a:visited {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 25px;
+}
+
+@media (max-width: 360px) {
+  .modal__card .modal__price {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .modal__card .modal__price .modal__info {
+    margin: 10px 0;
+  }
+  .modal__card .modal__price a {
+    margin: 10px 0;
+  }
 }
 
 .modal__card .modal__price .modal__button_order {
