@@ -765,15 +765,18 @@ a:visited {
         font-size: 14px;
         line-height: 19px;
 
-        p {
-            @media (max-screen: 360px) {
-                text-align: center;
-            }
-        }
+        
         /* or 136% */
 
 
         color: #000000;
+
+        p {
+            @media (max-width: 360px) {
+                text-align: center;
+            }
+        
+        }
             }
 
     .logo_link {
@@ -790,6 +793,7 @@ a:visited {
         justify-content: space-between;
     }
 }
+
 
 .test_screen {
     border: 2px solid black;
@@ -922,175 +926,172 @@ a:visited {
     }
 }
 
-.modal-product {
-    
-}
 
 // закрывает весь экран при открытии поп-ап окна
-.pop-up__background {
-    display: none;
-    width: 100%;
-    min-height: 100%;
-    background: rgba($color: #666262, $alpha: 0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    // color: gray;
-    // opacity: 0.3;
-}
-
-.card_pop-up {
-    // display: flex;
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-
-    max-width: 550px;
-    width: 80%;
-    // border: 2px solid gray;
-    background:rgba(252, 248, 248, 1);
-
-    .pop-up__image {
-        width: 100%;
-        margin-bottom: 30px;
-
-    }
-
-    .pop-up__subscribe {
-        margin: 0;
-        padding: 0 65px;
-    }
-
-    .pop-up__title {
-        margin-bottom: 25px;
-        h3 {
-            font-family: 'Commissioner';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 16px;
-            /* or 80% */
-            letter-spacing: -0.005em;
-            color: #000000;
-        }
-    }
-    .pop-up__subtitle {
-        margin-bottom: 25px;
-        h4 {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            /* or 129% */
-
-
-            color: #000000;
-        }
-    }
-
-    .pop-up__info {
-        margin-bottom: 10px;
-        display: flex;
-        margin: 0 0 10px 0;
-        h4 {
-            margin: 0;
-            font-family: 'Montserrat';
-            font-style: normal;
-            // font-weight: 500;
-            font-size: 14px;
-            line-height: 18px;
-            /* or 129% */
-
-            display: flex;
-            align-items: center;
-
-            color: #000000;
-        }
-        p {
-            margin: 0;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 18px;
-            /* or 129% */
-
-            display: flex;
-            align-items: center;
-
-            color: #000000;
-        }
-    }
-
-    .pop-up__price {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 25px;
-
-        .pop-up__button_order {
-            width: 125px;
-            height: 40px;
-            margin: 0 0 10px 0;
-            background: #B0B331;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 18px;
-            color:#FFFFFF;
-
-        }
-    }
-
-    
-}
-
-
-// ***********************для секции продукт взял из модуля 21.12.22
-// .modal__background,
-// .modal__card {
-//     opacity: 0;
-//     z-index: -2;
-//     transition: opacity .3s ease-in;
-
-// }
-
-// // .modal-product {}
-
-// .modal-product.open .modal__background,
-// .modal-product.open .modal__card {
-//     opacity: 1;
-//     z-index: 5;
-// }
-
-
-
-// .modal__background {
-//     display: flex;
-//     // width: 100%;
-//     // min-height: 100%;
+// .pop-up__background {
+//     display: none;
+//     width: 100%;
+//     min-height: 100%;
 //     background: rgba($color: #666262, $alpha: 0.8);
 //     position: fixed;
 //     top: 0;
 //     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     z-index: -3;
-//     // transition: background .3s ease-in;
+//     z-index: 1;
 //     // color: gray;
 //     // opacity: 0.3;
 // }
+
+// .card_pop-up {
+//     // display: flex;
+//     display: none;
+//     flex-direction: column;
+//     position: absolute;
+//     z-index: 2;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+
+
+//     max-width: 550px;
+//     width: 80%;
+//     // border: 2px solid gray;
+//     background:rgba(252, 248, 248, 1);
+
+//     .pop-up__image {
+//         width: 100%;
+//         margin-bottom: 30px;
+
+//     }
+
+//     .pop-up__subscribe {
+//         margin: 0;
+//         padding: 0 65px;
+//     }
+
+//     .pop-up__title {
+//         margin-bottom: 25px;
+//         h3 {
+//             font-family: 'Commissioner';
+//             font-style: normal;
+//             font-weight: 700;
+//             font-size: 20px;
+//             line-height: 16px;
+//             /* or 80% */
+//             letter-spacing: -0.005em;
+//             color: #000000;
+//         }
+//     }
+//     .pop-up__subtitle {
+//         margin-bottom: 25px;
+//         h4 {
+//             font-family: 'Montserrat';
+//             font-style: normal;
+//             font-weight: 400;
+//             font-size: 14px;
+//             line-height: 18px;
+//             /* or 129% */
+
+
+//             color: #000000;
+//         }
+//     }
+
+//     .pop-up__info {
+//         margin-bottom: 10px;
+//         display: flex;
+//         margin: 0 0 10px 0;
+//         h4 {
+//             margin: 0;
+//             font-family: 'Montserrat';
+//             font-style: normal;
+//             // font-weight: 500;
+//             font-size: 14px;
+//             line-height: 18px;
+//             /* or 129% */
+
+//             display: flex;
+//             align-items: center;
+
+//             color: #000000;
+//         }
+//         p {
+//             margin: 0;
+//             font-family: 'Montserrat';
+//             font-style: normal;
+//             font-weight: 500;
+//             font-size: 14px;
+//             line-height: 18px;
+//             /* or 129% */
+
+//             display: flex;
+//             align-items: center;
+
+//             color: #000000;
+//         }
+//     }
+
+//     .pop-up__price {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         margin-bottom: 25px;
+
+//         .pop-up__button_order {
+//             width: 125px;
+//             height: 40px;
+//             margin: 0 0 10px 0;
+//             background: #B0B331;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             font-family: 'Montserrat';
+//             font-style: normal;
+//             font-weight: 500;
+//             font-size: 18px;
+//             line-height: 18px;
+//             color:#FFFFFF;
+
+//         }
+//     }
+
+    
+// }
+
+
+// ***********************для секции продукт взял из модуля 21.12.22
+.modal__background,
+.modal__card {
+    opacity: 0;
+    z-index: -2;
+    transition: opacity .3s ease-in;
+
+}
+
+// .modal-product {}
+
+.modal-product.open .modal__background,
+.modal-product.open .modal__card {
+    opacity: 1;
+    z-index: 5;
+}
+
+
+
+.modal__background {
+    display: flex;
+    // width: 100%;
+    // min-height: 100%;
+    background: rgba($color: #666262, $alpha: 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+    // transition: background .3s ease-in;
+    // color: gray;
+    // opacity: 0.3;
+}
 
 .modal__card {
     display: flex;
