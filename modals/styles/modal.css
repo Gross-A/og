@@ -1,0 +1,193 @@
+.modal__background,
+.modal__card {
+  opacity: 0;
+  z-index: -2;
+  -webkit-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in;
+}
+
+.modal-product.open .modal__background,
+.modal-product.open .modal__card {
+  opacity: 1;
+  z-index: 5;
+}
+
+.modal__background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(102, 98, 98, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -3;
+}
+
+.modal__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 450px;
+  background: #fcf8f8;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .modal__card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal__card {
+    width: 80%;
+  }
+}
+
+.modal__card .modal__image {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.modal__card .modal__subscribe {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.modal__card .modal__title {
+  margin-bottom: 25px;
+}
+
+.modal__card .modal__title h2 {
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 16px;
+  /* or 80% */
+  letter-spacing: -0.005em;
+  color: #000000;
+}
+
+.modal__card .modal__subtitle {
+  margin-bottom: 20px;
+}
+
+.modal__card .modal__subtitle h4 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 129% */
+  color: #000000;
+}
+
+.modal__card .modal__info {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 10px 0;
+}
+
+.modal__card .modal__info h4 {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 129% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+@media (max-width: 576px) {
+  .modal__card .modal__info h4 {
+    font-size: 12px;
+  }
+}
+
+.modal__card .modal__info p {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 129% */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+}
+
+@media (max-width: 576px) {
+  .modal__card .modal__info p {
+    font-size: 12px;
+  }
+}
+
+.modal__card .modal__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.modal__card .modal__price .modal__button_order {
+  width: 100px;
+  padding: 5px 10px;
+  margin: 0 0 10px 0;
+  border-radius: 2px;
+  background: #e4eaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+@media (max-width: 576px) {
+  .modal__card .modal__price .modal__button_order {
+    width: auto;
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=modal.css.map */

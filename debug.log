@@ -1,0 +1,2 @@
+[1124/205820.445:ERROR:registration_protocol_win.cc(106)] CreateFile: Не удается найти указанный файл. (0x2)
+[1124/210206.799:ERROR:registration_protocol_win.cc(106)] CreateFile: Не удается найти указанный файл. (0x2)
