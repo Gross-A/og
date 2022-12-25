@@ -20,247 +20,249 @@
 
 </head>
 <body>
-    <header class="header conteiner">
-        <div class="menu-list">
-            <div class="menu-list__element">
-                <a href="index.html">Главная</a>
+    <div class='body-container'>
+        <header class="header conteiner">
+            <div class="menu-list">
+                <div class="menu-list__element">
+                    <a href="index.html">Главная</a>
+                </div>
+                <div class="menu-list__element">
+                    <a href="index.html#about-me"> Обо мне</a>
+                </div>
+                <div class="menu-list__element">
+                    <a href="index.html#my-products"> Мои работы
+                    </a>
+                </div>
+                <!-- <div class="menu-list__element">Главная</div>
+                <div class="menu-list__element">Обо мне</div>
+                <div class="menu-list__element">Мои работы</div> -->
+
             </div>
-            <div class="menu-list__element">
-                <a href="index.html#about-me"> Обо мне</a>
-            </div>
-            <div class="menu-list__element">
-                <a href="index.html#my-products"> Мои работы
+        
+            <div class="logo">
+                <a href="./index.html">
+                    <div class="logo__image">
+                        <img src="assets/icons/Logo_image.svg" alt="logo">
+                    </div>
+                    <div class="logo__title">
+                        <p>O.GROSS</p>
+                    </div>
+                    <div class="logo__subtitle">
+                        <p>KNITTING ACCESSORIZE</p>
+                    </div>
                 </a>
             </div>
-            <!-- <div class="menu-list__element">Главная</div>
-            <div class="menu-list__element">Обо мне</div>
-            <div class="menu-list__element">Мои работы</div> -->
+            
+            <div class="menu-list">
+                <div class="menu-list__element">Каталог</div>
+                <div class="menu-list__element">
+                    <a href="#"> В наличии</a>
+                </div>
+                <div class="menu-list__element">
+                    <a href="#contacts"> Контакты</a>
+                </div>
 
-        </div>
-       
-        <div class="logo">
-            <a href="./index.html">
-                <div class="logo__image">
-                    <img src="assets/icons/Logo_image.svg" alt="logo">
+            </div>
+
+            <div class="burger">
+                <!-- <img src="assets/icons/burger_menu_img.svg" alt="burger"> -->
+                <!-- временно пробую бургер сделать из отдельных спиц с анимацией -->
+                <div class="needle " id="needle_1">
+                    <img src="assets/svg/needle_1.svg" alt="burger">
                 </div>
-                <div class="logo__title">
-                    <p>O.GROSS</p>
+                <div class="needle" id="needle_2">
+                    <img src="assets/svg/needle_2.svg" alt="burger">
                 </div>
-                <div class="logo__subtitle">
-                    <p>KNITTING ACCESSORIZE</p>
+                <div class="needle" id="needle_3">
+                    <img src="assets/svg/needle_1.svg" alt="burger">
                 </div>
-            </a>
-        </div>
+
+            </div>
+
+            <div class="burger-menu">
+                <nav class="burger__navigation">
+                    <ul class="burger__list">
+                        <li><a href="#about-me">ОБО МНЕ</a> </li>
+                        <li><a href="index.html#my-products">МОИ РАБОТЫ</a></li>
+                        <li><a href="products.html">КАТАЛОГ</a></li>
+                        <li><a href="#in-stock" id="inStock">В НАЛИЧИИ </a></li>
+                        <li><a href="#contacts">КОНТАКТЫ </a></li>
+                        <li><a href="#">О ПРЯЖЕ</a></li>
+                        <li><a href="#">ПАМЯТКА ОБ УХОДЕ</a></li>
+                        <li><a href="#">ИНСТРУКЦИЯ ПО ЗАМЕРАМ</a></li>
         
-        <div class="menu-list">
-            <div class="menu-list__element">Каталог</div>
-            <div class="menu-list__element">
-                <a href="#"> В наличии</a>
+                        <li>ОТЗЫВЫ</li>
+                    </ul>
+                </nav>
             </div>
-            <div class="menu-list__element">
-                <a href="#contacts"> Контакты</a>
-            </div>
+        
+        
+        <!--добавил сверху бургер с главной страницы удалил блок бургера снизу 24.12-->
+            <!-- <div class="burger">
+                <img src="assets/icons/burger_menu_img.svg" alt="burger">
+            </div>  -->
 
-        </div>
-
-        <div class="burger">
-            <!-- <img src="assets/icons/burger_menu_img.svg" alt="burger"> -->
-            <!-- временно пробую бургер сделать из отдельных спиц с анимацией -->
-            <div class="needle " id="needle_1">
-                <img src="assets/svg/needle_1.svg" alt="burger">
-            </div>
-            <div class="needle" id="needle_2">
-                <img src="assets/svg/needle_2.svg" alt="burger">
-            </div>
-            <div class="needle" id="needle_3">
-                <img src="assets/svg/needle_1.svg" alt="burger">
-            </div>
-
-        </div>
-
-        <div class="burger-menu">
-            <nav class="burger__navigation">
+            <!--<div class="burger_menu">
+                <h2>Меню</h2>
                 <ul class="burger__list">
-                    <li><a href="#about-me">ОБО МНЕ</a> </li>
-                    <li><a href="index.html#my-products">МОИ РАБОТЫ</a></li>
-                    <li><a href="products.html">КАТАЛОГ</a></li>
-                    <li><a href="#in-stock" id="inStock">В НАЛИЧИИ </a></li>
-                    <li><a href="#contacts">КОНТАКТЫ </a></li>
-                    <li><a href="#">О ПРЯЖЕ</a></li>
-                    <li><a href="#">ПАМЯТКА ОБ УХОДЕ</a></li>
-                    <li><a href="#">ИНСТРУКЦИЯ ПО ЗАМЕРАМ</a></li>
-    
+                    <li><a href="#">ОБО МНЕ</a> </li>
+                    <li>О ПРЯЖЕ</li>
+                    <li>МОИ РАБОТЫ</li>
+                    <li>КАТАЛОГ</li>
+                    <li>В НАЛИЧИИ</li>
+                    <li>КОНТАКТЫ</li>
                     <li>ОТЗЫВЫ</li>
                 </ul>
-            </nav>
-        </div>
-    
-    
-<!--добавил сверху бургер с главной страницы удалил блок бургера снизу 24.12-->
-        <!-- <div class="burger">
-            <img src="assets/icons/burger_menu_img.svg" alt="burger">
-        </div>  -->
+            </div>-->
 
-        <!--<div class="burger_menu">
-            <h2>Меню</h2>
-            <ul class="burger__list">
-                <li><a href="#">ОБО МНЕ</a> </li>
-                <li>О ПРЯЖЕ</li>
-                <li>МОИ РАБОТЫ</li>
-                <li>КАТАЛОГ</li>
-                <li>В НАЛИЧИИ</li>
-                <li>КОНТАКТЫ</li>
-                <li>ОТЗЫВЫ</li>
-            </ul>
-        </div>-->
-
-    </header>
-<main class="conteiner">
-    <section class="products">
-        <div class="products__menu">
-            <div class="products__category">
-                <h3 class="child">дети</h3>
-            </div>
-            <div class="products__category ">
-                <h3 class="women">девушки</h3>
-            </div>
-            <div class="products__category">
-                <h3 class="man">мужчины</h3>
-            </div>
-            <div class="products__category">
-                <h3>в наличии</h3>
-            </div>
-        </div>
-
-        <div class="products__cards">
-<!--временно удалил 21.12.22
-            <div class="product-card">
-                <img class="product-image" src="#" alt="product-image">
-                <div class="card__info">
-                    <div class="card__title">
-                        <h3>lorem</h3>
+        </header>
+        <main class="conteiner">
+            <section class="products">
+                <div class="products__menu">
+                    <div class="products__category">
+                        <h3 class="child">дети</h3>
                     </div>
-                    <div class="card__subtitle">
-                        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ducimus sit nemo in saepe laboriosam laudantium reprehenderit non iste. Earum similique, iste tempore reiciendis ab quia eos tenetur molestias facilis.
-                        </h5>
+                    <div class="products__category ">
+                        <h3 class="women">девушки</h3>
                     </div>
-                    <div class="card__price">
-                        <p class="price__title"> Цена от: </p>
-                        <p class="price__value"> х000</p>
-                        <p class="price__currency">рубл.</p>
-
+                    <div class="products__category">
+                        <h3 class="man">мужчины</h3>
+                    </div>
+                    <div class="products__category">
+                        <h3>в наличии</h3>
                     </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <img class="product-image" src="assets/my_works/child/img_2.png" alt="product-image">
-                <div class="card__info">
-                    <div class="card__title">
-                        <h3>lorem</h3>
-                    </div>
-                    <div class="card__subtitle">
-                        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ducimus sit nemo in saepe laboriosam laudantium reprehenderit non iste. Earum similique, iste tempore reiciendis ab quia eos tenetur molestias facilis.
-                        </h5>
-                    </div>
-                    <div class="card__price">
-                        <p class="price__title"> Цена от: </p>
-                        <p class="price__value"> х000</p>
-                        <p class="price__currency">рубл.</p>
 
+                <div class="products__cards">
+        <!--временно удалил 21.12.22
+                    <div class="product-card">
+                        <img class="product-image" src="#" alt="product-image">
+                        <div class="card__info">
+                            <div class="card__title">
+                                <h3>lorem</h3>
+                            </div>
+                            <div class="card__subtitle">
+                                <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ducimus sit nemo in saepe laboriosam laudantium reprehenderit non iste. Earum similique, iste tempore reiciendis ab quia eos tenetur molestias facilis.
+                                </h5>
+                            </div>
+                            <div class="card__price">
+                                <p class="price__title"> Цена от: </p>
+                                <p class="price__value"> х000</p>
+                                <p class="price__currency">рубл.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-image" src="assets/my_works/child/img_2.png" alt="product-image">
+                        <div class="card__info">
+                            <div class="card__title">
+                                <h3>lorem</h3>
+                            </div>
+                            <div class="card__subtitle">
+                                <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ducimus sit nemo in saepe laboriosam laudantium reprehenderit non iste. Earum similique, iste tempore reiciendis ab quia eos tenetur molestias facilis.
+                                </h5>
+                            </div>
+                            <div class="card__price">
+                                <p class="price__title"> Цена от: </p>
+                                <p class="price__value"> х000</p>
+                                <p class="price__currency">рубл.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-image" src="#" alt="product-image">
+                        <div class="card__info">
+                            <div class="card__title">
+                                <h3>lorem</h3>
+                            </div>
+                            <div class="card__subtitle">
+                                <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ducimus sit nemo in saepe laboriosam laudantium reprehenderit non iste. Earum similique, iste tempore reiciendis ab quia eos tenetur molestias facilis.
+                                </h5>
+                            </div>
+                            <div class="card__price">
+                                <p class="price__title"> Цена от: </p>
+                                <p class="price__value"><h3>х000 </h3></p>
+                                <p class="price__currency">рубл.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-image" src="#" alt="product-image">
+                        <div class="card__info">
+                            <div class="card__title">
+                                <h3>lorem</h3>
+                            </div>
+                            <div class="card__subtitle">
+                                <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ducimus sit nemo in saepe laboriosam laudantium reprehenderit non iste. Earum similique, iste tempore reiciendis ab quia eos tenetur molestias facilis.
+                                </h5>
+                            </div>
+                            <div class="card__price">
+                                <p class="price__title"> Цена от: </p>
+                                <p class="price__value"> х000</p>
+                                <p class="price__currency">рубл.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                -->
+
+
+                </div>
+            </section>
+            <section class="modal-product"> <!--product_pop-up-->
+            </section>
+
+        
+        </main>
+
+
+
+        <footer class="footer conteiner" id="contacts">
+            <div class="section__title"> 
+                <p> КОНТАКТЫ: </p>
+            </div>
+            <div class="footer__text">
+                <p>Для получения более подробной информации или 
+                    оформления заказа пишите:</p>
+            </div>
+
+            <div class="logo_link">
+                <a href="https://telegram.me/ogross">
+                    <img src="assets/icons/telegram_logo.svg" alt="link_logo">
+                </a>
+                <a href="https://vk.com/ogross35">
+                    <img src="assets/icons/vk_logo.svg" alt="link_logo">
+                </a>
+                <a href="https://wa.me/4957777777">
+                    <img src="assets/icons/whatsapp_logo.svg" alt="link_logo">
+                </a>
+            </div>
+            <div class="create_info">
+                <div class="create_info__date">
+                    <p> 2022 &#169;</p>
+                </div>
+                <div class="logo">
+                    <div class="logo__image">
+                        <img src="assets/icons/Logo_image.svg" alt="logo">
+                    </div>
+                    <div class="logo__title">
+                        <p>O.GROSS</p>
+                    </div>
+                    <div class="logo__subtitle">
+                        <p>KNITTING ACCESSORIZE</p>
                     </div>
                 </div>
-            </div>
-            <div class="product-card">
-                <img class="product-image" src="#" alt="product-image">
-                <div class="card__info">
-                    <div class="card__title">
-                        <h3>lorem</h3>
-                    </div>
-                    <div class="card__subtitle">
-                        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ducimus sit nemo in saepe laboriosam laudantium reprehenderit non iste. Earum similique, iste tempore reiciendis ab quia eos tenetur molestias facilis.
-                        </h5>
-                    </div>
-                    <div class="card__price">
-                        <p class="price__title"> Цена от: </p>
-                        <p class="price__value"><h3>х000 </h3></p>
-                        <p class="price__currency">рубл.</p>
 
-                    </div>
+                <div class="create_info__author">
+                    <p>@Gross-A</p>
                 </div>
             </div>
-            <div class="product-card">
-                <img class="product-image" src="#" alt="product-image">
-                <div class="card__info">
-                    <div class="card__title">
-                        <h3>lorem</h3>
-                    </div>
-                    <div class="card__subtitle">
-                        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias ducimus sit nemo in saepe laboriosam laudantium reprehenderit non iste. Earum similique, iste tempore reiciendis ab quia eos tenetur molestias facilis.
-                        </h5>
-                    </div>
-                    <div class="card__price">
-                        <p class="price__title"> Цена от: </p>
-                        <p class="price__value"> х000</p>
-                        <p class="price__currency">рубл.</p>
 
-                    </div>
-                </div>
-            </div>
-        -->
-
-
-        </div>
-    </section>
-    <section class="modal-product"> <!--product_pop-up-->
-    </section>
-
-  
-</main>
-
-
-
-<footer class="footer conteiner" id="contacts">
-    <div class="section__title"> 
-        <p> КОНТАКТЫ: </p>
+        </footer>
     </div>
-    <div class="footer__text">
-        <p>Для получения более подробной информации или 
-            оформления заказа пишите:</p>
-    </div>
-
-    <div class="logo_link">
-        <a href="https://telegram.me/ogross">
-            <img src="assets/icons/telegram_logo.svg" alt="link_logo">
-        </a>
-        <a href="https://vk.com/ogross35">
-            <img src="assets/icons/vk_logo.svg" alt="link_logo">
-        </a>
-        <a href="https://wa.me/4957777777">
-            <img src="assets/icons/whatsapp_logo.svg" alt="link_logo">
-        </a>
-    </div>
-    <div class="create_info">
-        <div class="create_info__date">
-            <p> 2022 &#169;</p>
-        </div>
-        <div class="logo">
-            <div class="logo__image">
-                <img src="assets/icons/Logo_image.svg" alt="logo">
-            </div>
-            <div class="logo__title">
-                <p>O.GROSS</p>
-            </div>
-            <div class="logo__subtitle">
-                <p>KNITTING ACCESSORIZE</p>
-            </div>
-        </div>
-
-        <div class="create_info__author">
-            <p>@Gross-A</p>
-        </div>
-    </div>
-
-</footer>
 
 
 <!-- <script src="./modals/js/base.js"></script> -->

@@ -11,6 +11,12 @@ html {
   scroll-behavior: smooth;
 }
 
+.body-container {
+  overflow-x: hidden;
+  max-width: 1440px;
+  position: relative;
+}
+
 a {
   outline: none;
   text-decoration: none;
